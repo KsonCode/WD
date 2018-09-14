@@ -21,7 +21,7 @@ public class HeaderInterceptor implements Interceptor{
      */
     @Override
     public Response intercept(Chain chain) throws IOException {
-        Request request = chain.request().newBuilder().addHeader("sessionId","1536892152419514")
+        Request request = chain.request().newBuilder().addHeader("sessionId","1536895166820514")
                 .addHeader("userId","514").build();
         return chain.proceed(request);//返回response
     }
